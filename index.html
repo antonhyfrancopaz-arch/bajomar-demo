@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BajoMarDemo · Alquiler de yates con capitán en Miami (Demo)</title>
+<meta name="description" content="Alquila un yate privado en Miami con capitán a bordo: medio día, día completo, sunset cruise, eventos y pesca. Cotiza por teléfono, WhatsApp o formulario. Sitio demo con datos de prueba.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="BajoMarDemo · Alquiler de yates en Miami">
+<meta property="og:description" content="Yates privados con tripulación en la Bahía de Biscayne. Cotiza por teléfono, WhatsApp o formulario.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_US">
+<meta property="og:image" content="img/superyate-perfil.webp">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/superyate-perfil.webp" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","additionalType":"https://schema.org/BoatRental","name":"BajoMarDemo (demo)","description":"Alquiler de yates con tripulación en Miami. Negocio ficticio para portafolio.","telephone":"+1-305-555-0142","email":"contacto@bajomardemo.com","image":"img/superyate-perfil.webp","address":{"@type":"PostalAddress","streetAddress":"1500 Bayshore Dr","addressLocality":"Miami","addressRegion":"FL","postalCode":"33133","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"20:00"}}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="demo-banner">
+    <span class="demo-dot"></span>
+    <span>Vista previa · Sitio demo — datos, precios y reseñas de prueba</span>
+  </div>
+  <nav class="nav container">
+    <a href="#inicio" class="logo">BajoMar<span class="logo-demo">Demo</span></a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#precios">Precios</a>
+        <a href="#casos">Casos</a>
+      </div>
+      <a href="#contacto" class="btn btn-pill-outline nav-cta">Reservar</a>
+      <button class="menu-btn" id="menuOpenBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span>Menú</span>
+        <span class="menu-icon"><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <div class="mobile-menu-top container">
+    <span class="logo">BajoMar<span class="logo-demo">Demo</span></span>
+    <button class="menu-close-btn" id="menuCloseBtn" aria-label="Cerrar menú">CERRAR ✕</button>
+  </div>
+  <div class="mobile-menu-body container">
+    <nav class="mobile-menu-links">
+      <a href="#inicio" data-num="01">Inicio</a>
+      <a href="#servicios" data-num="02">Servicios</a>
+      <a href="#como-funciona" data-num="03">Cómo funciona</a>
+      <a href="#precios" data-num="04">Precios</a>
+      <a href="#casos" data-num="05">Casos</a>
+      <a href="#contacto" data-num="06">Contacto</a>
+      <a href="#blog" data-num="07">Blog</a>
+    </nav>
+    <div class="mobile-menu-info">
+      <div>
+        <div class="label">TELÉFONO</div>
+        <a href="tel:+13055550142" class="phone-link">(305) 555-0142</a>
+      </div>
+      <div>
+        <div class="label">HORARIO</div>
+        <div>Todos los días, 8:00 AM – 8:00 PM</div>
+      </div>
+      <a href="#contacto" class="btn btn-gold">Reservar / Cotizar</a>
+    </div>
+  </div>
+</div>
+
+<aside class="social-rail" aria-label="Redes sociales">
+  <a href="#" aria-label="Instagram (placeholder)">IG</a>
+  <a href="#" aria-label="Facebook (placeholder)">FB</a>
+  <a href="#" aria-label="TikTok (placeholder)">TT</a>
+  <a href="https://wa.me/13055550142" aria-label="WhatsApp">WA</a>
+</aside>
+
+<div class="mobile-bar">
+  <a href="tel:+13055550142" class="btn btn-outline-small">Llamar</a>
+  <a href="https://wa.me/13055550142?text=Hola%2C%20quiero%20cotizar%20un%20yate" class="btn btn-outline-small">WhatsApp</a>
+  <a href="#contacto" class="btn btn-gold-small">Reservar</a>
+</div>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide is-active" data-slide="0">
+        <img src="img/superyate-perfil.webp" width="2400" height="1351" alt="Superyate visto de perfil navegando en la Bahía de Biscayne" fetchpriority="high">
+      </div>
+      <div class="hero-slide" data-slide="1" aria-hidden="true">
+        <img src="img/bahia-yate-velero.webp" width="1600" height="806" alt="Yate y velero navegando en la bahía de Miami" loading="lazy">
+      </div>
+      <div class="hero-slide" data-slide="2" aria-hidden="true">
+        <img src="img/yate-casco-oscuro.webp" width="1600" height="1200" alt="Yate de casco oscuro listo para un evento privado" loading="lazy">
+      </div>
+      <div class="hero-slide" data-slide="3" aria-hidden="true">
+        <img src="img/flota-yates.webp" width="1600" height="1067" alt="Flota de yates atracados al atardecer" loading="lazy">
+      </div>
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="hero-content container">
+      <div class="eyebrow gold" id="heroTag">01 · La flota</div>
+      <div class="hero-title" aria-hidden="true">
+        <span class="hero-title-main">BajoMar</span><span class="hero-title-demo">Demo</span>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-h1">Tu yate privado en la bahía de Miami, con capitán a bordo.</h1>
+          <p class="hero-lead">Medio día, día completo, sunset cruise, eventos privados y pesca deportiva. Tú eliges el plan; nosotros nos encargamos del barco.</p>
+        </div>
+        <div class="hero-actions">
+          <div class="hero-ctas">
+            <a href="#contacto" class="btn btn-gold">Reservar / Cotizar</a>
+            <a href="https://wa.me/13055550142?text=Hola%2C%20quiero%20cotizar%20un%20yate" class="btn btn-ghost">WhatsApp</a>
+          </div>
+          <div class="hero-rating">
+            <span class="star">★</span>
+            <span class="missing-tag">[FALTA: X.X]</span><span>en Google ·</span><span class="missing-tag">[FALTA: N]</span><span>reseñas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats container">
+      <div class="hero-stats-row">
+        <div class="stat-group">
+          <div class="stat"><div class="label">CAPACIDAD</div><div class="value" id="heroCap">Hasta 12 personas</div></div>
+          <div class="stat"><div class="label">DURACIÓN</div><div class="value" id="heroDur">4 – 8 horas</div></div>
+          <div class="stat"><div class="label">UBICACIÓN</div><div class="value">Coconut Grove, Miami</div></div>
+          <div class="stat"><div class="label">TRIPULACIÓN</div><div class="value">Capitán incluido</div></div>
+        </div>
+        <div class="hero-dots" id="heroDots">
+          <button type="button" class="dot is-active" data-go="0" aria-label="Ver foto 1"><span class="dot-num">01</span><span class="dot-bar"><span style="width:100%"></span></span></button>
+          <button type="button" class="dot" data-go="1" aria-label="Ver foto 2"><span class="dot-num">02</span><span class="dot-bar"><span style="width:0%"></span></span></button>
+          <button type="button" class="dot" data-go="2" aria-label="Ver foto 3"><span class="dot-num">03</span><span class="dot-bar"><span style="width:0%"></span></span></button>
+          <button type="button" class="dot" data-go="3" aria-label="Ver foto 4"><span class="dot-num">04</span><span class="dot-bar"><span style="width:0%"></span></span></button>
+        </div>
+      </div>
+      <div class="fine-note">DATOS DE LA FRANJA: EJEMPLO</div>
+    </div>
+  </section>
+
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow gold">02 — SERVICIOS</div>
+          <h2 class="h2">Un plan para cada salida</h2>
+        </div>
+        <p class="lead">Cinco formas de salir al agua, todas con capitán a bordo. Elige una y te enviamos opciones de yate y precio.</p>
+      </div>
+      <div class="services-grid">
+        <article class="card service-card">
+          <div class="card-media"><img src="img/bahia-yate-velero.webp" width="1600" height="806" alt="Salida de medio día por la Bahía de Biscayne" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-num">01 / 05</div>
+            <h3 class="card-title">Medio día</h3>
+            <p class="card-text">Cuatro horas para recorrer la Bahía de Biscayne, parar en un sandbar y nadar. Salida de mañana o de tarde.</p>
+            <div class="card-meta"><span><span class="label-inline">DURACIÓN </span>4 h</span><span><span class="label-inline">CAPACIDAD </span>Hasta 12</span></div>
+            <button type="button" class="link-cta" data-pick="medio-dia">Cotizar este plan →</button>
+          </div>
+        </article>
+        <article class="card service-card">
+          <div class="card-media"><img src="img/superyate-perfil.webp" width="2400" height="1351" alt="Superyate para una salida de día completo" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-num">02 / 05</div>
+            <h3 class="card-title">Día completo</h3>
+            <p class="card-text">Tiempo para ir más lejos: Key Biscayne, Stiltsville o islas cercanas, con paradas para nadar y comer a bordo.</p>
+            <div class="card-meta"><span><span class="label-inline">DURACIÓN </span>8 h</span><span><span class="label-inline">CAPACIDAD </span>Hasta 12</span></div>
+            <button type="button" class="link-cta" data-pick="dia-completo">Cotizar este plan →</button>
+          </div>
+        </article>
+        <article class="card service-card">
+          <div class="card-media card-media--placeholder">FOTO: sunset cruise (placeholder)</div>
+          <div class="card-body">
+            <div class="card-num">03 / 05</div>
+            <h3 class="card-title">Sunset cruise</h3>
+            <p class="card-text">Salida al caer la tarde para ver el atardecer frente al skyline de Brickell y Downtown.</p>
+            <div class="card-meta"><span><span class="label-inline">DURACIÓN </span>2 – 3 h</span><span><span class="label-inline">CAPACIDAD </span>Hasta 12</span></div>
+            <button type="button" class="link-cta" data-pick="sunset">Cotizar este plan →</button>
+          </div>
+        </article>
+        <article class="card service-card">
+          <div class="card-media"><img src="img/yate-casco-oscuro.webp" width="1600" height="1200" alt="Yate preparado para un evento privado" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-num">04 / 05</div>
+            <h3 class="card-title">Eventos privados</h3>
+            <p class="card-text">Cumpleaños, propuestas y salidas corporativas. Coordinamos horario, ruta y proveedores si los necesitas.</p>
+            <div class="card-meta"><span><span class="label-inline">DURACIÓN </span>A medida</span><span><span class="label-inline">CAPACIDAD </span>Hasta 12</span></div>
+            <button type="button" class="link-cta" data-pick="evento">Cotizar este plan →</button>
+          </div>
+        </article>
+        <article class="card service-card">
+          <div class="card-media card-media--placeholder">FOTO: pesca deportiva (placeholder)</div>
+          <div class="card-body">
+            <div class="card-num">05 / 05</div>
+            <h3 class="card-title">Pesca deportiva</h3>
+            <p class="card-text">Equipo de pesca a bordo y un capitán que conoce la costa. Licencias de pesca: [FALTA: confirmar].</p>
+            <div class="card-meta"><span><span class="label-inline">DURACIÓN </span>4 – 8 h</span><span><span class="label-inline">CAPACIDAD </span>Hasta 6</span></div>
+            <button type="button" class="link-cta" data-pick="pesca">Cotizar este plan →</button>
+          </div>
+        </article>
+      </div>
+      <div class="fine-note">DURACIONES Y CAPACIDADES: EJEMPLO</div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section section--alt">
+    <div class="container como-grid">
+      <div class="como-img">
+        <img src="img/yate-entre-arboles.webp" width="1600" height="2133" alt="Yate visto entre árboles cerca de la marina" loading="lazy">
+      </div>
+      <div>
+        <div class="eyebrow gold">03 — CÓMO FUNCIONA</div>
+        <h2 class="h2 h2--tight">Cuatro pasos hasta el agua</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div><div class="step-title">Cotiza</div><div class="step-text">Cuéntanos fecha, número de personas y el plan que te interesa. Respondemos con opciones de yate y precio.</div></div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div><div class="step-title">Confirma la fecha</div><div class="step-text">Eliges yate y horario, y apartas con un depósito. Te enviamos la confirmación por escrito.</div></div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div><div class="step-title">Check-in en la marina</div><div class="step-text">Llegas 20 minutos antes a 1500 Bayshore Dr. El capitán da las indicaciones de seguridad.</div></div>
+          </div>
+          <div class="step">
+            <div class="step-num">04</div>
+            <div><div class="step-title">Zarpa</div><div class="step-text">Navegas la ruta acordada; el capitán ajusta paradas según el clima y el grupo.</div></div>
+          </div>
+        </div>
+        <div class="inc-exc-grid">
+          <div>
+            <div class="inc-exc-head inc-exc-head--inc">Incluido</div>
+            <div class="inc-exc-row"><span>Capitán con licencia</span><span class="note">[FALTA: nº licencia]</span></div>
+            <div class="inc-exc-row"><span>Combustible</span><span class="note">[CONFIRMAR]</span></div>
+            <div class="inc-exc-row"><span>Seguro de la embarcación</span><span class="note">[FALTA: póliza]</span></div>
+            <div class="inc-exc-row"><span>Equipo de seguridad</span><span class="note"></span></div>
+            <div class="inc-exc-row"><span>Hielo, agua y hieleras</span><span class="note">[EJEMPLO]</span></div>
+          </div>
+          <div>
+            <div class="inc-exc-head inc-exc-head--exc">No incluido</div>
+            <div class="inc-exc-row inc-exc-row--muted"><span>Propina tripulación</span><span class="note">[FALTA: %]</span></div>
+            <div class="inc-exc-row inc-exc-row--muted"><span>Comida y bebidas</span><span class="note"></span></div>
+            <div class="inc-exc-row inc-exc-row--muted"><span>Decoración para eventos</span><span class="note"></span></div>
+            <div class="inc-exc-row inc-exc-row--muted"><span>Estacionamiento</span><span class="note">[CONFIRMAR]</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fleet-band">
+    <img src="img/flota-yates.webp" width="1600" height="1067" alt="Flota completa de yates BajoMarDemo atracada en la marina" loading="lazy">
+    <div class="fleet-band-scrim" aria-hidden="true"></div>
+    <div class="fleet-band-text container" aria-hidden="true">La flota</div>
+  </section>
+
+  <section id="precios" class="section">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="eyebrow gold">04 — PRECIOS · TRES PAQUETES</div>
+        <div class="dashed-badge">PRECIOS DE EJEMPLO — NO SON TARIFAS REALES</div>
+      </div>
+      <h2 class="precios-title">Precios</h2>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <div class="plan-head">
+            <div class="plan-name">Medio día</div>
+          </div>
+          <div class="plan-price-wrap">
+            <div class="label">Desde</div>
+            <div class="plan-price"><span class="price">$950</span><span class="price-suffix">USD · 4 horas</span></div>
+          </div>
+          <div class="plan-items">
+            <div class="plan-item">Hasta 12 personas</div>
+            <div class="plan-item">Capitán y combustible</div>
+            <div class="plan-item">Parada en sandbar</div>
+            <div class="plan-item">Hielo, agua y hieleras</div>
+          </div>
+          <button type="button" class="btn btn-plan" data-pick="medio-dia">Cotizar Medio día</button>
+        </div>
+        <div class="plan-card plan-card--featured">
+          <div class="plan-head">
+            <div class="plan-name">Día completo</div>
+            <span class="featured-tag">MÁS PEDIDO</span>
+          </div>
+          <div class="plan-price-wrap">
+            <div class="label">Desde</div>
+            <div class="plan-price"><span class="price">$1,700</span><span class="price-suffix">USD · 8 horas</span></div>
+          </div>
+          <div class="plan-items">
+            <div class="plan-item">Hasta 12 personas</div>
+            <div class="plan-item">Capitán y combustible</div>
+            <div class="plan-item">Ruta a Key Biscayne o Stiltsville</div>
+            <div class="plan-item">Dos paradas para nadar</div>
+            <div class="plan-item">Hielo, agua y hieleras</div>
+          </div>
+          <button type="button" class="btn btn-plan btn-plan--gold" data-pick="dia-completo">Cotizar Día completo</button>
+        </div>
+        <div class="plan-card">
+          <div class="plan-head">
+            <div class="plan-name">Evento privado</div>
+          </div>
+          <div class="plan-price-wrap">
+            <div class="label">Desde</div>
+            <div class="plan-price"><span class="price">$2,400</span><span class="price-suffix">USD · a medida</span></div>
+          </div>
+          <div class="plan-items">
+            <div class="plan-item">Hasta 12 personas</div>
+            <div class="plan-item">Capitán y combustible</div>
+            <div class="plan-item">Horario y ruta a medida</div>
+            <div class="plan-item">Coordinación de catering y decoración</div>
+          </div>
+          <button type="button" class="btn btn-plan" data-pick="evento">Cotizar Evento privado</button>
+        </div>
+      </div>
+      <div class="precios-footnotes">
+        <p><strong>Depósito.</strong> La fecha se aparta con un depósito del <span class="missing-tag missing-tag--inline">[FALTA: %]</span> del total. El saldo se paga <span class="missing-tag missing-tag--inline">[FALTA: cuándo]</span>.</p>
+        <p><strong>Cancelación.</strong> <span class="missing-tag missing-tag--inline">[FALTA: plazo y reembolso]</span> Si el capitán cancela por mal tiempo, se reprograma o se devuelve el depósito <span class="missing-tag missing-tag--inline">[CONFIRMAR]</span>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="casos" class="section section--teal">
+    <div class="container">
+      <div class="section-head-row section-head-row--end">
+        <div>
+          <div class="eyebrow gold">05 — CASOS Y TESTIMONIOS</div>
+          <h2 class="h2">Lo que dicen</h2>
+        </div>
+        <div class="dashed-badge">TESTIMONIOS DE EJEMPLO — NO SON CLIENTES REALES</div>
+      </div>
+      <div class="reviews-grid">
+        <figure class="review-card">
+          <blockquote>“Reservamos para un cumpleaños y todo salió como lo planeamos. El capitán conocía cada rincón de la bahía.”</blockquote>
+          <figcaption><div class="review-name">Cliente de ejemplo 1</div><div class="review-plan">Sunset cruise</div></figcaption>
+        </figure>
+        <figure class="review-card">
+          <blockquote>“Nos respondieron por WhatsApp en minutos y el yate estaba listo a la hora acordada.”</blockquote>
+          <figcaption><div class="review-name">Cliente de ejemplo 2</div><div class="review-plan">Día completo</div></figcaption>
+        </figure>
+        <figure class="review-card">
+          <blockquote>“Llevamos a nuestro equipo y nos ayudaron a coordinar el catering. Muy fácil de organizar.”</blockquote>
+          <figcaption><div class="review-name">Cliente de ejemplo 3</div><div class="review-plan">Evento corporativo</div></figcaption>
+        </figure>
+        <figure class="review-card">
+          <blockquote>“Buen equipo a bordo y un capitán paciente con los que pescábamos por primera vez.”</blockquote>
+          <figcaption><div class="review-name">Cliente de ejemplo 4</div><div class="review-plan">Pesca deportiva</div></figcaption>
+        </figure>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-placeholder">FOTO REAL: Cumpleaños a bordo (placeholder)</div>
+        <div class="gallery-placeholder">FOTO REAL: Propuesta de matrimonio (placeholder)</div>
+        <div class="gallery-placeholder">FOTO REAL: Salida corporativa (placeholder)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="container contacto-grid">
+      <div>
+        <div class="eyebrow gold">06 — CONTACTO</div>
+        <h2 class="h2 h2--tight">Reserva tu fecha</h2>
+
+        <div class="form-success" id="formSuccess" hidden>
+          <div class="eyebrow gold">SOLICITUD RECIBIDA · DEMO</div>
+          <div class="form-success-title">Gracias, <span id="successName"></span>.</div>
+          <p class="form-success-text">En un sitio real te contactaríamos al <span id="successPhone"></span> para confirmar: <span id="successPkg"></span>, <span id="successDate"></span>. Esta es una demo: el formulario no envía correos ni guarda datos fuera de tu navegador.</p>
+          <button type="button" class="btn btn-outline" id="resetFormBtn">Enviar otra solicitud</button>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <label class="field">Nombre
+            <input type="text" id="f-name" name="name" placeholder="Tu nombre" autocomplete="name">
+            <span class="field-error" id="err-name"></span>
+          </label>
+          <div class="field-row">
+            <label class="field">Teléfono
+              <input type="tel" id="f-phone" name="phone" placeholder="(305) 000-0000" autocomplete="tel">
+              <span class="field-error" id="err-phone"></span>
+            </label>
+            <label class="field">Fecha deseada
+              <input type="date" id="f-date" name="date">
+              <span class="field-error" id="err-date"></span>
+            </label>
+          </div>
+          <label class="field">Paquete o tipo de salida
+            <select id="f-pk" name="pk">
+              <option value="">Selecciona…</option>
+              <option value="medio-dia">Medio día (4 h)</option>
+              <option value="dia-completo">Día completo (8 h)</option>
+              <option value="sunset">Sunset cruise</option>
+              <option value="evento">Evento privado</option>
+              <option value="pesca">Pesca deportiva</option>
+              <option value="otro">No estoy seguro</option>
+            </select>
+            <span class="field-error" id="err-pk"></span>
+          </label>
+          <label class="field">Mensaje (opcional)
+            <textarea id="f-msg" name="msg" rows="4" placeholder="Número de personas, ocasión, horario preferido…"></textarea>
+          </label>
+          <p class="privacy-note">Aviso de privacidad: usamos tus datos solo para responder a tu solicitud y no los compartimos con terceros. <span class="missing-tag missing-tag--inline">[FALTA: enlace a política completa]</span></p>
+          <button type="submit" class="btn btn-gold">Solicitar cotización</button>
+        </form>
+      </div>
+
+      <aside class="contacto-aside">
+        <div class="contacto-img">
+          <img src="img/marina-muelle.webp" width="1600" height="1067" alt="Muelle de la marina donde se aborda el yate" loading="lazy">
+        </div>
+        <div class="contacto-info-grid">
+          <div><div class="label">TELÉFONO</div><a href="tel:+13055550142" class="phone-link">(305) 555-0142</a></div>
+          <div><div class="label">WHATSAPP</div><a href="https://wa.me/13055550142?text=Hola%2C%20quiero%20cotizar%20un%20yate" class="phone-link">Escribir →</a></div>
+          <div><div class="label">HORARIO</div><div>Todos los días<br>8:00 AM – 8:00 PM</div></div>
+          <div><div class="label">MARINA</div><div>1500 Bayshore Dr<br>Miami, FL 33133</div></div>
+        </div>
+        <div class="map-placeholder">MAPA EMBEBIDO — PLACEHOLDER<br>(Google Maps de la marina real)</div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="blog" class="section section--alt">
+    <div class="container">
+      <div class="section-head-row section-head-row--end">
+        <div>
+          <div class="eyebrow gold">07 — BLOG</div>
+          <h2 class="h2">Antes de zarpar</h2>
+        </div>
+        <div class="dashed-badge">ARTÍCULOS DE EJEMPLO</div>
+      </div>
+      <div class="blog-grid">
+        <a href="#blog" class="blog-card">
+          <div class="blog-meta">GUÍA · 4 MIN</div>
+          <h3 class="blog-title">Qué llevar a un día en yate</h3>
+          <p class="blog-text">Protector solar, ropa ligera y lo que conviene dejar en tierra. Contenido de ejemplo.</p>
+          <span class="blog-read">Leer →</span>
+        </a>
+        <a href="#blog" class="blog-card">
+          <div class="blog-meta">MIAMI · 3 MIN</div>
+          <h3 class="blog-title">Mejores horarios para ver el atardecer en Miami</h3>
+          <p class="blog-text">Cuándo salir según la temporada para llegar a tiempo. Contenido de ejemplo.</p>
+          <span class="blog-read">Leer →</span>
+        </a>
+        <a href="#blog" class="blog-card">
+          <div class="blog-meta">PRIMERA VEZ · 5 MIN</div>
+          <h3 class="blog-title">Tu primer alquiler de yate con tripulación</h3>
+          <p class="blog-text">Qué preguntar al cotizar y cómo funciona el día. Contenido de ejemplo.</p>
+          <span class="blog-read">Leer →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <section class="cta-band">
+    <img src="img/yate-casco-oscuro.webp" width="1600" height="1200" alt="Yate al atardecer, listo para zarpar" loading="lazy">
+    <div class="cta-band-scrim" aria-hidden="true"></div>
+    <div class="cta-band-content container">
+      <div class="eyebrow gold">RESERVAS · TODOS LOS DÍAS 8AM–8PM</div>
+      <div class="cta-band-title">¿Listo para<br>zarpar?</div>
+      <div class="cta-band-actions">
+        <a href="#contacto" class="btn btn-gold">Reservar / Cotizar</a>
+        <a href="https://wa.me/13055550142?text=Hola%2C%20quiero%20cotizar%20un%20yate" class="btn btn-ghost">WhatsApp</a>
+        <a href="tel:+13055550142" class="btn btn-ghost">(305) 555-0142</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-cols container">
+    <div>
+      <div class="logo footer-logo">BajoMar<span class="logo-demo">Demo</span></div>
+      <p>Alquiler de yates con tripulación en la Bahía de Biscayne, Miami.</p>
+    </div>
+    <div>
+      <div class="label">CONTACTO</div>
+      <div><a href="tel:+13055550142">(305) 555-0142</a></div>
+      <div><a href="mailto:contacto@bajomardemo.com">contacto@bajomardemo.com</a></div>
+      <div>1500 Bayshore Dr, Miami, FL 33133</div>
+    </div>
+    <div>
+      <div class="label">HORARIO</div>
+      <div>Todos los días, 8:00 AM – 8:00 PM</div>
+      <div class="license-note">Licencia charter: [FALTA]</div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 BAJOMARDEMO · SITIO DE DEMOSTRACIÓN PARA PORTAFOLIO · NO ES UN NEGOCIO REAL</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
